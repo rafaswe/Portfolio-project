@@ -1,0 +1,265 @@
+/* common design starts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+    --primary-color:#F68149
+}
+*{
+    font-family: 'Poppins', sans-serif;
+}
+/* section,bcakground-color{
+    background:#333647;
+} */
+body{
+    background-image: url("images/bg.jpg");
+}
+
+/* nav section starts */
+nav .navbar-container{
+    border-bottom: 2px solid white;
+}
+nav .link{
+    transition: 1s;
+}
+nav  .link:hover::after{
+    width: 80%;
+}
+nav  .link::after{
+    content: '';
+    width: 0px;
+    height: 3px;
+    background-color: var(--primary-color);
+    display: block;
+    margin: auto;
+    transition: 1s;
+}
+
+nav .link:hover{
+    transform: scale(1.2);
+}
+/* banner section strats from here. */
+
+
+.img-style{
+    border: 5px solid var(--primary-color);
+    transition: 1s;
+}
+.img-style:hover{
+   animation: pulse;
+   animation-duration: 1.5s;
+   animation-iteration-count: infinite;
+}
+.lines{
+    display: inline-block;
+    height: 4px;
+    width: 15px;
+    background-color: white;
+    opacity: 0.3;
+    top: -5px;
+    position: relative;
+}
+.customised-text-color{
+    color: var(--primary-color);
+}
+.paragraph-style{
+    color: rgb(216, 212, 212);
+}
+.fig-title{
+    color: #F9E79F;
+}
+.customised-dot::before, .customised-dot::after{
+    content: '';
+    display: inline-block;
+    background-color: var(--primary-color);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.btn-style{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    background:rgb(100, 90, 90);
+    box-shadow: 2px 2px 5px 5px rgba(246, 129,73,.3);
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-style:hover {   
+    background-image: radial-gradient(#F68149,#F68149,#f3570f);
+    color: white;
+    box-shadow: 2px 2px 5px 2px rgba(246, 129,73,.5);
+    transform: scale(1.2);
+}
+.btn-style i{
+    display: inline-block;
+    margin-left: 0 1rem;
+}
+.btn-style:hover i{
+    animation: shakeY;
+    animation-duration: 3s; 
+    animation-iteration-count: infinite;
+  }
+
+/* main section starts. */
+
+/* About me starts */
+.about-me-img{
+    position: relative;
+}
+.description{
+    position: relative;
+}
+.description-paragraph{
+    border-bottom: 2px solid var(--primary-color);
+    background: transparent;
+}
+.box-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.box-area > li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background-image: radial-gradient(rgb(70, 74, 95),rgb(111, 117, 151),rgba(255, 255, 255,.2));
+    animation: animate 20s linear infinite;
+    bottom: -150px;
+}
+.box-area > li:nth-child(1){
+    left:86%;
+    width:30px;
+    height: 30px;
+    animation-delay: 0s;
+    animation-duration: 10s;
+}
+.box-area > li:nth-child(2){
+    left:12%;
+    width:30px;
+    height: 30px;
+
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+}
+.box-area > li:nth-child(3){
+    left:60%;
+    width:30px;
+    height: 30px;
+    animation-delay: 5.5s;
+    animation-duration: 10s;
+}
+.box-area > li:nth-child(4){
+    left:40%;
+    width:30px;
+    height: 30px;
+    animation-delay: 1.4s;
+    animation-duration: 10s;
+}
+.box-area > li:nth-child(5){
+    left:55%;
+    width:30px;
+    height: 30px;
+    animation-delay: 0s;
+    animation-duration: 10s;
+}
+.box-area > li:nth-child(6){
+    left:15%;
+    width:30px;
+    height: 30px;
+    animation-delay: 3.5s;
+    animation-duration: 10s;
+}
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+/* project section starts */
+.project:hover{
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
+.project-btn{
+    background-image: radial-gradient(#F68149,#F68149,#f3570f);
+    box-shadow: 2px 2px 5px 5px rgba(246, 129,73,.3);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.project-btn:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px 2px rgba(246, 129,73,.5)
+}
+/* achievement section starts */
+.acheivement-section{
+    position: relative;
+}
+.border-style{
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* contact-section starts here  */
+.contact-section{
+background-image: url('images/bg2.jpg');
+border-radius: 100px;
+}
+.contact-btn > .fa-facebook-square{
+    transition: 0.5s;
+}
+.contact-btn > .fa-facebook-square:hover{
+    transform: scale(1.5);
+    color: rgb(78, 78, 250);
+}
+.contact-btn > .fa-linkedin{
+    transition: 0.5s;
+}
+.contact-btn > .fa-linkedin:hover{
+    transform: scale(1.5);
+    color: rgb(70, 70, 170);
+}
+.contact-btn-style{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    background:rgb(100, 90, 90);
+    box-shadow: 2px 2px 5px 5px rgba(246, 129,73,.3);
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contact-btn-style:hover {   
+    background-image: radial-gradient(#F68149,#F68149,#f3570f);
+    color: white;
+    box-shadow: 2px 2px 5px 2px rgba(246, 129,73,.5);
+    transform: scale(1.2);
+}
+.contact-btn-style .btn-icon1, .contact-btn-style .btn-icon2{
+    display: inline-block;
+    margin-left: 0 1rem;
+}
+.contact-btn-style:hover .btn-icon1{
+    animation: shakeX;
+    animation-duration: 3s; 
+    animation-iteration-count: infinite;
+  }
+  .contact-btn-style:hover .btn-icon2{
+    animation: tada;
+    animation-duration: 1s; 
+    animation-iteration-count: infinite;
+  }
