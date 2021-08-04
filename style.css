@@ -18,7 +18,7 @@ nav .navbar-container{
     border-bottom: 2px solid white;
 }
 nav .link{
-    transition: 1s;
+    transition: 0.5s;
 }
 nav  .link:hover::after{
     width: 80%;
@@ -30,7 +30,7 @@ nav  .link::after{
     background-color: var(--primary-color);
     display: block;
     margin: auto;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 nav .link:hover{
