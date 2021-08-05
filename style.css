@@ -1,19 +1,18 @@
 /* common design starts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Mali&display=swap');
 :root{
     --primary-color:#F68149
 }
-*{
-    font-family: 'Poppins', sans-serif;
-}
-/* section,bcakground-color{
-    background:#333647;
-} */
 body{
     background-image: url("images/bg.jpg");
+    font-family: 'Mali', cursive;
 }
 
 /* nav section starts */
+.logo-font{
+    font-family: 'Pacifico', cursive;
+}
 nav .navbar-container{
     border-bottom: 2px solid white;
 }
@@ -38,7 +37,9 @@ nav .link:hover{
 }
 /* banner section strats from here. */
 
-
+.banner-section{
+    font-family: 'Itim', cursive;
+}
 .img-style{
     border: 5px solid var(--primary-color);
     transition: 1s;
@@ -93,6 +94,9 @@ nav .link:hover{
     box-shadow: 2px 2px 5px 2px rgba(246, 129,73,.5);
     transform: scale(1.2);
 }
+.btn-style:hover .banner-btn{
+    color: white;
+} 
 .btn-style i{
     display: inline-block;
     margin-left: 0 1rem;
@@ -218,19 +222,29 @@ nav .link:hover{
 background-image: url('images/bg2.jpg');
 border-radius: 100px;
 }
+.form-control::placeholder { 
+    color: rgb(212, 212, 212);
+}
+.form-control:-ms-input-placeholder {
+    color: rgb(212, 212, 212);
+}
+
+.form-control::-ms-input-placeholder { 
+    color: rgb(212, 212, 212);
+}
 .contact-btn > .fa-facebook-square{
     transition: 0.5s;
 }
 .contact-btn > .fa-facebook-square:hover{
     transform: scale(1.5);
-    color: rgb(78, 78, 250);
+    color: rgb(94, 94, 252);
 }
 .contact-btn > .fa-linkedin{
     transition: 0.5s;
 }
 .contact-btn > .fa-linkedin:hover{
     transform: scale(1.5);
-    color: rgb(70, 70, 170);
+    color: skyblue;
 }
 .contact-btn-style{
     border: none;

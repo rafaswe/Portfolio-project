@@ -27,7 +27,7 @@
         <!-- navbar starts here. -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent text-center">
             <div class="navbar-container container py-2">
-                <a class="navbar-brand d-flex align-items-center" href="#">
+                <a class="navbar-brand d-flex align-items-center logo-font" href="#">
                     <img class="img-fuild" width="61" height="61" src="images/favicon.png" alt="">
                     Rafa</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -61,7 +61,7 @@
         </nav>
 
         <!-- banner section strats. -->
-        <section class="banner-section container py-2 text-lg-start text-sm-center text-white">
+        <section class="banner-section container py-5 text-lg-start text-sm-center text-white">
             <div class="row g-4 align-items-center px-2">
                 <div class="col-lg-6 col-sm-12 animate__animated animate__lightSpeedInLeft overflow-hidden">
                     <small class="text-muted fw-bold">Welcome to My Portfolio</small>
@@ -77,7 +77,9 @@
                         </div>
                         <span class="ps-1">Programmer</span>
                     </div>
-                    <button class="btn-style fw-bold my-3">Contact me<i class="far fa-arrow-alt-circle-down ms-1"></i>
+                    <button class="btn-style fw-bold my-3"><a href="#contact-id"
+                            class="text-decoration-none customised-text-color banner-btn">Contact
+                            me</a><i class="far fa-arrow-alt-circle-down ms-1"></i>
                     </button>
                 </div>
                 <div class="col-lg-6 col-sm-12">
@@ -92,7 +94,7 @@
     <main>
         <!-- about me section starts from here. -->
         <section class="container text-white my-5 p-3 " id="about-me-id">
-            <h2 class="text-center">About me</h2>
+            <h2 class="text-center fw-bolder">About me</h2>
             <hr>
             <div class="row g-4 align-items-center justify-content-center">
                 <div class="col-lg-6 col-sm-12 py-3 ">
@@ -619,7 +621,8 @@
                 <div class="col-lg-6 col-sm-12 text-center">
                     <form action="">
                         <textarea name="msg" id="msg-id" cols="20" rows="6"
-                            class="form-control my-3 bg-secondary"></textarea>
+                            class="form-control my-3 bg-secondary text-white"
+                            placeholder="Write Your message"></textarea>
                         <button class="btn contact-btn-style m-3 px-3" onclick="sendMsg()"> send
                             <i class="fas fa-arrow-right ps-1 btn-icon1"></i>
                         </button>
@@ -644,7 +647,7 @@
                                 <i class="fas fa-2x fa-phone"></i>
                             </div>
                             <div class="contact-info">
-                                <p>01631907601 ,01869128525</p>
+                                <p>01631907601</p>
                             </div>
                         </div>
                     </div>
