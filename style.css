@@ -29,6 +29,7 @@ nav  .link::after{
     background-color: var(--primary-color);
     display: block;
     margin: auto;
+    margin-bottom: 5px;
     transition: 0.5s;
 }
 
@@ -60,6 +61,13 @@ nav .link:hover{
 }
 .customised-text-color{
     color: var(--primary-color);
+}
+.customised-anchor-icon{
+    transition: 0.5s;
+}
+.customised-anchor-icon:hover{
+    color: var(--primary-color);
+transform: scale(1.1);
 }
 .paragraph-style{
     color: rgb(216, 212, 212);
@@ -245,6 +253,20 @@ border-radius: 100px;
 .contact-btn > .fa-linkedin:hover{
     transform: scale(1.5);
     color: skyblue;
+}
+.contact-btn > .fa-whatsapp-square{
+    transition: 0.5s;
+}
+.contact-btn> .fa-whatsapp-square:hover{
+    transform: scale(1.5);
+    color: lightgreen;
+}
+.contact-btn > .fa-instagram-square{
+    transition: 0.5s;
+}
+.contact-btn> .fa-instagram-square:hover{
+    transform: scale(1.5);
+    color: red;
 }
 .contact-btn-style{
     border: none;
